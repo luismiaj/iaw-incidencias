@@ -30,7 +30,7 @@ try {
         ':equipo' => 'GitHub Actions',
         ':descripcion' => 'Prueba automática CI'
     ]);
-    echo "3. INSERT correcto\n"
+    echo "3. INSERT correcto\n";
 
     $total = (int)$pdo->query("SELECT COUNT(*) FROM incidencias")->fetchColumn();
     echo "4. Registros tras INSERT: {$total}\n";
